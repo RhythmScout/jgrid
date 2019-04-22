@@ -1,0 +1,154 @@
+.content-columns{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  @media screen and (max-width: 1024px) {
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: block;
+}
+  .column{
+    position: relative;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    background-color: #ffffff;
+    overflow: hidden;
+    //&:nth-child(even){
+    //  background-color: #ebdce8;
+    //  //background-color: #d6d3d0;
+    //}
+    &.shaded_column{
+      //background-color: #ebdce8;
+      //background-color: $secondary-color;
+      background-color: desaturate(lighten($primary-color,5%),35%);
+      //background-color: #555;
+      color: #fff;
+      h1,h2,h3,h4,h5,h6,p,span,a{
+        color: #ffffff;
+    }
+  }
+    > div{
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: 0;
+      overflow-y: auto;
+      overflow-x: hidden;
+      > div{
+        position: relative;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 content;
+        flex: 1 1 auto;
+        align-self: center;
+        padding: 0 30px;
+        max-height: 100%;
+      //height: auto;
+    }
+  }
+  //> div{
+  //  display: table;
+  //  position: absolute;
+  //  top: 0;
+  //  right: 0;
+  //  bottom: 0;
+  //  left: 0;
+  //  margin: 0;
+  //  height: 100%;
+  //  width: 100%;
+  //  max-height: 100%;
+  //  > div{
+  //    display: table-cell;
+  //    vertical-align: middle;
+  //    position: relative;
+  //    padding: 0 30px;
+  //    overflow: auto;
+  //  }
+  //}
+}
+
+  .fade{
+    display: inline-block;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 500ms ease, visibility 500ms ease, transform 500ms ease-out;
+    &.fade-animate{
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+  // Srory Jermy had to add thjis for testings
+  .highlight {
+    &.highlight-animate {
+      color: var(--c);
+      -o-transition:.8s;
+      -ms-transition:.8s;
+      -moz-transition:.8s;
+      -webkit-transition:.8s;
+      transition:.8s;
+    }
+  }
+}
+
+.column-100{
+  width: 100%;
+  height: 100%;
+}
+.column-75{
+  width: 75%;
+  height: 100%;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    height: 75%;
+  }
+}
+.column-66{
+  width: 66.666%;
+  height: 100%;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    height: 66.666%;
+  }
+}
+.column-50{
+  width: 50%;
+  height: 100%;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    height: 50%;
+  }
+}
+.column-33{
+  width: 33.333%;
+  height: 100%;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    height: 33.333%;
+  }
+}
+.column-25{
+  width: 25%;
+  height: 100%;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    height: 25%;
+  }
+}

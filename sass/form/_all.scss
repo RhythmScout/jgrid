@@ -1,0 +1,33 @@
+fieldset {
+  border: none;
+  display: block;
+  margin: 0;
+  outline: none;
+  padding:0;
+}
+
+.confirm-button, #add-feedbacks, #save-feedbacks, #cancel {
+  border: none;
+  padding: .5em;
+  font-size: 1.2em;
+  font-weight: 600;
+  outline: none;
+  background-color: $primary-color;
+  color: #fff;
+  border-radius: 5px;
+  &:hover {
+    cursor: pointer;
+    background-color: darken($primary-color, 10%)
+}
+}
+
+textarea {
+  height: 65px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border-color: #777;
+  margin-top: 12px;
+  font-size: 1.2em;
+  padding: .3em;
+}
