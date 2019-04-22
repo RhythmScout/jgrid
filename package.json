@@ -1,7 +1,7 @@
 {
   "name": "jgrid",
   "version": "1.0.0",
-  "description": "a css only flexbox grid brought to you by Jeremy Britton",
+  "description": "a css flexbox grid brought to you by Jeremy Britton of Flipside Media Inc.",
   "keywords": [
     "css",
     "sass",
@@ -10,11 +10,22 @@
   ],
   "main": "jgrid.scss",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output css/jgrid.css css/jgrid.css",
+    "build-clean": "rimraf css",
+    "build-cleancss": "cleancss -o css/jgrid.min.css css/jgrid.css",
+    "build-sass": "node-sass --output-style expanded --source-map true jgrid.scss css/jgrid.css",
+    "deploy": "npm run build",
+    "start": "npm run build-sass -- --watch"
   },
-  "author": "Flipside Media",
+  "author": {
+    "name": "Flipside Media",
+    "email": "info@flipsidemedia.com",
+    "url": "https//flipsidemedia.com"
+  },
   "license": "ISC",
   "dependencies": {
+    "autoprefixer": "^9.5.1",
     "clean-css-cli": "^4.3.0",
     "node-sass": "^4.11.0",
     "postcss-cli": "^6.1.2",
