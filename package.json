@@ -1,0 +1,15 @@
+{
+  "name": "jgrid",
+  "version": "1.0.0",
+  "description": "a css only flexbox grid brought to you by Jeremy Britton",
+  "main": "jgrid.sass",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Flipside Media",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.11.0",
+    "postcss-cli": "^6.1.2"
+  }
+}
