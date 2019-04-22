@@ -2,6 +2,12 @@
   "name": "jgrid",
   "version": "1.0.0",
   "description": "a css only flexbox grid brought to you by Jeremy Britton",
+  "keywords": [
+    "css",
+    "sass",
+    "flexbox",
+    "responsive"
+  ],
   "main": "jgrid.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +15,9 @@
   "author": "Flipside Media",
   "license": "ISC",
   "dependencies": {
+    "clean-css-cli": "^4.3.0",
     "node-sass": "^4.11.0",
-    "postcss-cli": "^6.1.2"
+    "postcss-cli": "^6.1.2",
+    "rimraf": "^2.6.3"
   }
 }
