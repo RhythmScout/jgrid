@@ -1,5 +1,5 @@
 {
-  "name": "jgrid",
+  "name": "fsmjgrid",
   "version": "1.0.0",
   "description": "a css flexbox grid brought to you by Jeremy Britton of Flipside Media Inc.",
   "keywords": [
@@ -23,6 +23,7 @@
     "email": "info@flipsidemedia.com",
     "url": "https//flipsidemedia.com"
   },
+  "homepage": "https://github.com/RhythmScout/jgrid",
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^9.5.1",
